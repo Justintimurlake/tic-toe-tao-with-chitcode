@@ -1,0 +1,82 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+
+table {
+  margin: 50px auto;
+  border-collapse: collapse;
+  border: 3px solid black;
+}
+
+td.cell {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 50px;
+  font-weight: bold;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+td.cell:hover {
+  background-color: #eee;
+}
+
+.endgame {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: whitesmoke;
+  width: 200px;
+  height: 120px;
+  background-color: rgba(193, 103, 12, 0.8);
+}
+
+.endgame .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
+
+.activated {
+  background-color: rgb(85, 214, 85);
+  color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  opacity: 0;
+  position: absolute;
+  top: 5%;
+}
